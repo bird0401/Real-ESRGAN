@@ -1,4 +1,10 @@
 # flake8: noqa
+from os.path import dirname, abspath
+import sys
+
+parent_dir = dirname(dirname(abspath(__file__)))
+sys.path.append(parent_dir)
+
 import os.path as osp
 from basicsr.train import train_pipeline
 
