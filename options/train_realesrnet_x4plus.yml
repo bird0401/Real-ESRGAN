@@ -33,10 +33,10 @@ queue_size: 180
 # dataset and data loader settings
 datasets:
   train:
-    name: DF2K+OST
+    name: DF2K
     type: RealESRGANDataset
-    dataroot_gt: datasets/DF2K
-    meta_info: datasets/DF2K/meta_info/meta_info_DF2Kmultiscale+OST_sub.txt
+    dataroot_gt: /content/Real-ESRGAN/dataset
+    meta_info: /content/Real-ESRGAN/meta_info/meta_info_DF2K.txt
     io_backend:
       type: disk
 
