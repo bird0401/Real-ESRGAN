@@ -1,3 +1,9 @@
+from os.path import dirname, abspath
+import sys
+
+parent_dir = dirname(dirname(dirname(abspath(__file__))))
+sys.path.append(parent_dir)
+
 import importlib
 from basicsr.utils import scandir
 from os import path as osp
