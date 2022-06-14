@@ -50,7 +50,7 @@ def main():
 
     # added from here
     if args.model_name in ['RealSRGAN_x4plus', 'RealSRNet_x4plus']:  # x4 MSRResNet model
-        model = MSRResNet(num_in_ch=3, num_out_ch=3, num_feat=32, num_block=6 upscale=4)
+        model = MSRResNet(num_in_ch=3, num_out_ch=3, num_feat=32, num_block=6, upscale=4)
         netscale = 4
     # to here
     elif args.model_name in ['RealESRGAN_x4plus', 'RealESRNet_x4plus']:  # x4 RRDBNet model
