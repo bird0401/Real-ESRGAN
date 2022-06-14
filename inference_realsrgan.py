@@ -67,7 +67,7 @@ def main():
         netscale = 4
 
     # determine model paths
-    model_path = 'Real-ESRGAN/weights/SRGAN_x4.pth'
+    model_path = 'weights/SRGAN_x4.pth'
     # model_path = os.path.join('experiments/pretrained_models', args.model_name + '.pth')
     if not os.path.isfile(model_path):
         model_path = os.path.join('realesrgan/weights', args.model_name + '.pth')
